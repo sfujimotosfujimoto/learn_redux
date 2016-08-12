@@ -24,10 +24,7 @@ export default class Single extends React.Component {
     return(
       <div className="single-photo">
         <Photo key={i} i={i} post={post} {...this.props}/>
-          // <div className="photo-grid">
-          //   {this.props.posts.map((post, i) => <Photo {...this.props} key={i} i={i} post={post} />)}
-          // </div>
-        <Comments postComments={postComments}/>
+        <Comments postComments={postComments} {...this.props}/>
       </div>
     )
   }
